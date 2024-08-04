@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F7A1C0482C5D8B220071D80F /* WCFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */; };
-		F7A1C04A2C5D8B220071D80F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1C0492C5D8B220071D80F /* ContentView.swift */; };
 		F7A1C04C2C5D8B250071D80F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1C04B2C5D8B250071D80F /* Assets.xcassets */; };
 		F7A1C04F2C5D8B250071D80F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1C04E2C5D8B250071D80F /* Preview Assets.xcassets */; };
+		F7B5C0942C600BC500EB62A6 /* WCFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */; };
+		F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */; };
+		F7B5C09A2C600C9C00EB62A6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7A1C0442C5D8B220071D80F /* WCFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCFinderApp.swift; sourceTree = "<group>"; };
-		F7A1C0492C5D8B220071D80F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7A1C04B2C5D8B250071D80F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7A1C04E2C5D8B250071D80F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCFinderView.swift; sourceTree = "<group>"; };
+		F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
+		F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		F7A1C0462C5D8B220071D80F /* WCFinder */ = {
 			isa = PBXGroup;
 			children = (
-				F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */,
-				F7A1C0492C5D8B220071D80F /* ContentView.swift */,
+				F7B5C0952C600C1300EB62A6 /* Views */,
+				F7B5C0982C600C7B00EB62A6 /* Manangers */,
+				F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */,
 				F7A1C04B2C5D8B250071D80F /* Assets.xcassets */,
 				F7A1C04D2C5D8B250071D80F /* Preview Content */,
+				F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */,
 			);
 			path = WCFinder;
 			sourceTree = "<group>";
@@ -65,6 +71,22 @@
 				F7A1C04E2C5D8B250071D80F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7B5C0952C600C1300EB62A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7B5C0982C600C7B00EB62A6 /* Manangers */ = {
+			isa = PBXGroup;
+			children = (
+				F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */,
+			);
+			path = Manangers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A1C04A2C5D8B220071D80F /* ContentView.swift in Sources */,
+				F7B5C09A2C600C9C00EB62A6 /* LocationManager.swift in Sources */,
+				F7B5C0942C600BC500EB62A6 /* WCFinderView.swift in Sources */,
 				F7A1C0482C5D8B220071D80F /* WCFinderApp.swift in Sources */,
+				F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
