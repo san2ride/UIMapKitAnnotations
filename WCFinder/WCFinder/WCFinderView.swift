@@ -6,21 +6,36 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct WCFinderView: View {
     
     @Environment(\.httpClient) private var restroomClient
     @State private var locationManager = LocationManager.shared
+    @State private var restrooms: [Restroom] = []
     
     private func loadRestrooms() async {
         guard let region = locationManager.region else { return }
         let coordinate = region.center
         
-        //restroomClient.fetchRestrooms(url: <#T##URL#>)
+        do {
+            restrooms = try await restroomClient.fetchRestrooms(url: Constants.Urls.restroomsByLocation(latitude: coordinate.latitude, longitude: coordinate.longitude))
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Map {
+                ForEach(restrooms) { restroom in
+                    Marker(restroom.name, coordinate: restroom.coordinate)
+                }
+                UserAnnotation()
+            }
+        } .task {
+            await loadRestrooms()
+        }
     }
 }
 
