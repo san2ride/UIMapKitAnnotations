@@ -13,7 +13,6 @@ struct ActionButtons: View {
     
     var body: some View {
         HStack {
-            
             Button(action: {
                 MKMapItem.openMaps(with: [mapItem])
             }, label: {
@@ -25,9 +24,7 @@ struct ActionButtons: View {
                 }
             }).buttonStyle(.bordered)
                 .tint(.green)
-            
             Spacer()
-            
         }
     }
 }

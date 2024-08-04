@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WCFinderView: View {
+    
+    @Environment(\.httpClient) private var restroomClient
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,4 +18,5 @@ struct WCFinderView: View {
 
 #Preview {
     WCFinderView()
+        .environment(\.httpClient, RestroomClient())
 }
