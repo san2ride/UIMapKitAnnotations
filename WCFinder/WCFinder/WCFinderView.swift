@@ -33,7 +33,7 @@ struct WCFinderView: View {
                 }
                 UserAnnotation()
             }
-        } .task {
+        } .task(id: locationManager.region) {
             await loadRestrooms()
         }
     }
