@@ -37,7 +37,6 @@ enum LocationError: LocalizedError {
 
 @Observable
 class LocationManager: NSObject, CLLocationManagerDelegate {
-    
     let manager = CLLocationManager()
     static let shared = LocationManager()
     var error: LocationError? = nil
@@ -76,7 +75,6 @@ extension LocationManager {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        
         if let clError = error as? CLError {
             switch clError.code {
                 case .locationUnknown:

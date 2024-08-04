@@ -17,6 +17,7 @@
 		F7EA5A7A2C6022A4007A07C9 /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A792C6022A4007A07C9 /* Restroom.swift */; };
 		F7EA5A7D2C6025C3007A07C9 /* RestroomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A7C2C6025C3007A07C9 /* RestroomClient.swift */; };
 		F7EA5A802C602805007A07C9 /* HTTPClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A7F2C602805007A07C9 /* HTTPClientKey.swift */; };
+		F7EA5A832C602A93007A07C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A822C602A93007A07C9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F7EA5A792C6022A4007A07C9 /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
 		F7EA5A7C2C6025C3007A07C9 /* RestroomClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomClient.swift; sourceTree = "<group>"; };
 		F7EA5A7F2C602805007A07C9 /* HTTPClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientKey.swift; sourceTree = "<group>"; };
+		F7EA5A822C602A93007A07C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		F7A1C0462C5D8B220071D80F /* WCFinder */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA5A812C602A84007A07C9 /* Utils */,
 				F7EA5A7E2C6027EB007A07C9 /* Enviroment Values */,
 				F7EA5A782C60228E007A07C9 /* Models */,
 				F7B5C0952C600C1300EB62A6 /* Views */,
@@ -131,6 +134,14 @@
 				F7EA5A7F2C602805007A07C9 /* HTTPClientKey.swift */,
 			);
 			path = "Enviroment Values";
+			sourceTree = "<group>";
+		};
+		F7EA5A812C602A84007A07C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA5A822C602A93007A07C9 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */,
 				F7EA5A802C602805007A07C9 /* HTTPClientKey.swift in Sources */,
 				F7EA5A7D2C6025C3007A07C9 /* RestroomClient.swift in Sources */,
+				F7EA5A832C602A93007A07C9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
