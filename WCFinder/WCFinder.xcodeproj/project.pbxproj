@@ -13,6 +13,7 @@
 		F7B5C0942C600BC500EB62A6 /* WCFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */; };
 		F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */; };
 		F7B5C09A2C600C9C00EB62A6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */; };
+		F7B5C09D2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C09C2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCFinderView.swift; sourceTree = "<group>"; };
 		F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
 		F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F7B5C09C2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				F7B5C0952C600C1300EB62A6 /* Views */,
 				F7B5C0982C600C7B00EB62A6 /* Manangers */,
+				F7B5C09B2C600D2500EB62A6 /* Extensions */,
 				F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */,
 				F7A1C04B2C5D8B250071D80F /* Assets.xcassets */,
 				F7A1C04D2C5D8B250071D80F /* Preview Content */,
@@ -87,6 +90,14 @@
 				F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */,
 			);
 			path = Manangers;
+			sourceTree = "<group>";
+		};
+		F7B5C09B2C600D2500EB62A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7B5C09C2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B5C09A2C600C9C00EB62A6 /* LocationManager.swift in Sources */,
+				F7B5C09D2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift in Sources */,
 				F7B5C0942C600BC500EB62A6 /* WCFinderView.swift in Sources */,
 				F7A1C0482C5D8B220071D80F /* WCFinderApp.swift in Sources */,
 				F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */,
