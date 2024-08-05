@@ -18,6 +18,7 @@
 		F7DFDF192C6140E30094FE97 /* MockRestroomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFDF182C6140E30094FE97 /* MockRestroomClient.swift */; };
 		F7DFDF1B2C6141A70094FE97 /* restrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = F7DFDF1A2C6141A70094FE97 /* restrooms.json */; };
 		F7DFDF1D2C6143DF0094FE97 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFDF1C2C6143DF0094FE97 /* PreviewData.swift */; };
+		F7DFDF1F2C6180E10094FE97 /* MapCameraPosition+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFDF1E2C6180E10094FE97 /* MapCameraPosition+Ext.swift */; };
 		F7EA5A7A2C6022A4007A07C9 /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A792C6022A4007A07C9 /* Restroom.swift */; };
 		F7EA5A7D2C6025C3007A07C9 /* RestroomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A7C2C6025C3007A07C9 /* RestroomClient.swift */; };
 		F7EA5A802C602805007A07C9 /* HTTPClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A7F2C602805007A07C9 /* HTTPClientKey.swift */; };
@@ -37,6 +38,7 @@
 		F7DFDF182C6140E30094FE97 /* MockRestroomClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRestroomClient.swift; sourceTree = "<group>"; };
 		F7DFDF1A2C6141A70094FE97 /* restrooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restrooms.json; sourceTree = "<group>"; };
 		F7DFDF1C2C6143DF0094FE97 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		F7DFDF1E2C6180E10094FE97 /* MapCameraPosition+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapCameraPosition+Ext.swift"; sourceTree = "<group>"; };
 		F7EA5A792C6022A4007A07C9 /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
 		F7EA5A7C2C6025C3007A07C9 /* RestroomClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomClient.swift; sourceTree = "<group>"; };
 		F7EA5A7F2C602805007A07C9 /* HTTPClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientKey.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				F7B5C09C2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift */,
+				F7DFDF1E2C6180E10094FE97 /* MapCameraPosition+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				F7EA5A7A2C6022A4007A07C9 /* Restroom.swift in Sources */,
 				F7B5C0942C600BC500EB62A6 /* WCFinderView.swift in Sources */,
 				F7A1C0482C5D8B220071D80F /* WCFinderApp.swift in Sources */,
+				F7DFDF1F2C6180E10094FE97 /* MapCameraPosition+Ext.swift in Sources */,
 				F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */,
 				F7DFDF172C613FEE0094FE97 /* HTTPClient.swift in Sources */,
 				F7EA5A802C602805007A07C9 /* HTTPClientKey.swift in Sources */,
