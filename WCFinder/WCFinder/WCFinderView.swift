@@ -41,5 +41,5 @@ struct WCFinderView: View {
 
 #Preview {
     WCFinderView()
-        .environment(\.httpClient, RestroomClient())
+        .environment(\.httpClient, MockRestroomClient())
 }

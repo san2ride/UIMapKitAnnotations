@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RestroomClient {
+struct RestroomClient: HTTPClient {
     private enum RestroomClientError: Error {
         case invalidResponse
         case networkError(Error)
@@ -20,7 +20,6 @@ struct RestroomClient {
               httpResponse.statusCode == 200 else {
             throw RestroomClientError.invalidResponse
         }
-        
         do {
             return try JSONDecoder().decode([Restroom].self, from: data)
         } catch {

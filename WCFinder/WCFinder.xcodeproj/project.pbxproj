@@ -14,6 +14,10 @@
 		F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */; };
 		F7B5C09A2C600C9C00EB62A6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */; };
 		F7B5C09D2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5C09C2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift */; };
+		F7DFDF172C613FEE0094FE97 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFDF162C613FEE0094FE97 /* HTTPClient.swift */; };
+		F7DFDF192C6140E30094FE97 /* MockRestroomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFDF182C6140E30094FE97 /* MockRestroomClient.swift */; };
+		F7DFDF1B2C6141A70094FE97 /* restrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = F7DFDF1A2C6141A70094FE97 /* restrooms.json */; };
+		F7DFDF1D2C6143DF0094FE97 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFDF1C2C6143DF0094FE97 /* PreviewData.swift */; };
 		F7EA5A7A2C6022A4007A07C9 /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A792C6022A4007A07C9 /* Restroom.swift */; };
 		F7EA5A7D2C6025C3007A07C9 /* RestroomClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A7C2C6025C3007A07C9 /* RestroomClient.swift */; };
 		F7EA5A802C602805007A07C9 /* HTTPClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5A7F2C602805007A07C9 /* HTTPClientKey.swift */; };
@@ -29,6 +33,10 @@
 		F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
 		F7B5C0992C600C9C00EB62A6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F7B5C09C2C600D4B00EB62A6 /* MKCoordinateRegion+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Ext.swift"; sourceTree = "<group>"; };
+		F7DFDF162C613FEE0094FE97 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F7DFDF182C6140E30094FE97 /* MockRestroomClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRestroomClient.swift; sourceTree = "<group>"; };
+		F7DFDF1A2C6141A70094FE97 /* restrooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restrooms.json; sourceTree = "<group>"; };
+		F7DFDF1C2C6143DF0094FE97 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		F7EA5A792C6022A4007A07C9 /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
 		F7EA5A7C2C6025C3007A07C9 /* RestroomClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomClient.swift; sourceTree = "<group>"; };
 		F7EA5A7F2C602805007A07C9 /* HTTPClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientKey.swift; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 		F7A1C0462C5D8B220071D80F /* WCFinder */ = {
 			isa = PBXGroup;
 			children = (
+				F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */,
 				F7EA5A812C602A84007A07C9 /* Utils */,
 				F7EA5A7E2C6027EB007A07C9 /* Enviroment Values */,
 				F7EA5A782C60228E007A07C9 /* Models */,
@@ -72,10 +81,9 @@
 				F7EA5A7B2C6025A9007A07C9 /* Clients */,
 				F7B5C0982C600C7B00EB62A6 /* Manangers */,
 				F7B5C09B2C600D2500EB62A6 /* Extensions */,
-				F7B5C0932C600BC500EB62A6 /* WCFinderView.swift */,
+				F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */,
 				F7A1C04B2C5D8B250071D80F /* Assets.xcassets */,
 				F7A1C04D2C5D8B250071D80F /* Preview Content */,
-				F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */,
 			);
 			path = WCFinder;
 			sourceTree = "<group>";
@@ -84,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				F7A1C04E2C5D8B250071D80F /* Preview Assets.xcassets */,
+				F7DFDF182C6140E30094FE97 /* MockRestroomClient.swift */,
+				F7DFDF1A2C6141A70094FE97 /* restrooms.json */,
+				F7DFDF1C2C6143DF0094FE97 /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				F7EA5A7C2C6025C3007A07C9 /* RestroomClient.swift */,
+				F7DFDF162C613FEE0094FE97 /* HTTPClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -203,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A1C04F2C5D8B250071D80F /* Preview Assets.xcassets in Resources */,
+				F7DFDF1B2C6141A70094FE97 /* restrooms.json in Resources */,
 				F7A1C04C2C5D8B250071D80F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +233,10 @@
 				F7B5C0942C600BC500EB62A6 /* WCFinderView.swift in Sources */,
 				F7A1C0482C5D8B220071D80F /* WCFinderApp.swift in Sources */,
 				F7B5C0972C600C3100EB62A6 /* ActionButtons.swift in Sources */,
+				F7DFDF172C613FEE0094FE97 /* HTTPClient.swift in Sources */,
 				F7EA5A802C602805007A07C9 /* HTTPClientKey.swift in Sources */,
+				F7DFDF1D2C6143DF0094FE97 /* PreviewData.swift in Sources */,
+				F7DFDF192C6140E30094FE97 /* MockRestroomClient.swift in Sources */,
 				F7EA5A7D2C6025C3007A07C9 /* RestroomClient.swift in Sources */,
 				F7EA5A832C602A93007A07C9 /* Constants.swift in Sources */,
 			);
