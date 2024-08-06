@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F77AB9002C627E4D00C1A528 /* RestroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AB8FF2C627E4D00C1A528 /* RestroomDetailView.swift */; };
 		F7A1C0482C5D8B220071D80F /* WCFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */; };
 		F7A1C04C2C5D8B250071D80F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1C04B2C5D8B250071D80F /* Assets.xcassets */; };
 		F7A1C04F2C5D8B250071D80F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1C04E2C5D8B250071D80F /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F77AB8FF2C627E4D00C1A528 /* RestroomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomDetailView.swift; sourceTree = "<group>"; };
 		F7A1C0442C5D8B220071D80F /* WCFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A1C0472C5D8B220071D80F /* WCFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCFinderApp.swift; sourceTree = "<group>"; };
 		F7A1C04B2C5D8B250071D80F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F7B5C0962C600C3100EB62A6 /* ActionButtons.swift */,
+				F77AB8FF2C627E4D00C1A528 /* RestroomDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				F7DFDF1D2C6143DF0094FE97 /* PreviewData.swift in Sources */,
 				F7DFDF192C6140E30094FE97 /* MockRestroomClient.swift in Sources */,
 				F7EA5A7D2C6025C3007A07C9 /* RestroomClient.swift in Sources */,
+				F77AB9002C627E4D00C1A528 /* RestroomDetailView.swift in Sources */,
 				F7EA5A832C602A93007A07C9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

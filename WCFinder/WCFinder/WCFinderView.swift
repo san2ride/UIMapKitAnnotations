@@ -57,7 +57,8 @@ struct WCFinderView: View {
             visibleRegion = context.region
         })
         .sheet(item: $selectedRestroom, content: { restroom in
-            Text(restroom.name)
+            RestroomDetailView(restroom: restroom)
+                .presentationDetents([.fraction(0.25)])
         })
         .overlay(alignment: .topLeading) {
             Button {
