@@ -43,9 +43,9 @@ struct RestroomDetailView: View {
                 Text(comment)
                     .font(.caption)
             }
-            
             AmenitiesView(restroom: restroom)
-        }.frame(maxWidth: .infinity, alignment: .leading)
+            ActionButtons(mapItem: restroom.mapItem)
+        }.frame(maxWidth: 350, alignment: .leading)
     }
 }
 
