@@ -7,6 +7,29 @@
 
 import SwiftUI
 
+struct AmenitiesView: View {
+    let restroom: Restroom
+    
+    var body: some View {
+        HStack(spacing: 12) {
+            AmenityView(symbol: "♿️", isEnabled: restroom.accessible)
+            AmenityView(symbol: "🚻", isEnabled: restroom.unisex)
+            AmenityView(symbol: "🚼", isEnabled: restroom.changingTable)
+        }
+    }
+}
+
+struct AmenityView: View {
+    let symbol: String
+    let isEnabled: Bool
+    
+    var body: some View {
+        if isEnabled {
+            Text(symbol)
+        }
+    }
+}
+
 struct RestroomDetailView: View {
     
     let restroom: Restroom
@@ -20,7 +43,9 @@ struct RestroomDetailView: View {
                 Text(comment)
                     .font(.caption)
             }
-        }
+            
+            AmenitiesView(restroom: restroom)
+        }.frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

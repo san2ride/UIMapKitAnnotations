@@ -58,6 +58,7 @@ struct WCFinderView: View {
         })
         .sheet(item: $selectedRestroom, content: { restroom in
             RestroomDetailView(restroom: restroom)
+                .padding()
                 .presentationDetents([.fraction(0.25)])
         })
         .overlay(alignment: .topLeading) {
