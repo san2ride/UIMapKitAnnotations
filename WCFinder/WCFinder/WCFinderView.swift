@@ -15,7 +15,7 @@ struct WCFinderView: View {
     @State private var restrooms: [Restroom] = []
     @State private var selectedRestroom: Restroom?
     @State private var visibleRegion: MKCoordinateRegion?
-    @State private var position: MapCameraPosition = .userLocation(fallback: .vail)
+    @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
     
     private func loadRestrooms() async {
         guard let region = visibleRegion else { return }
@@ -47,10 +47,17 @@ struct WCFinderView: View {
                 UserAnnotation()
             }
         } .task(id: locationManager.region) {
-            await loadRestrooms()
+            print("region changed")
+            if let region = locationManager.region {
+                visibleRegion = region
+                await loadRestrooms()
+            }
         }
         .onMapCameraChange({ context in
             visibleRegion = context.region
+        })
+        .sheet(item: $selectedRestroom, content: { restroom in
+            Text(restroom.name)
         })
         .overlay(alignment: .topLeading) {
             Button {
